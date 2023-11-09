@@ -1,0 +1,113 @@
+<html>
+
+<head>
+   <title>House Price Prediction</title>
+
+   <!-- <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" > -->
+   <link type="text/css" rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+   <h1>House Price Prediction</h1>
+
+   <form method="post" action="/">
+      <div class="input_fields">
+         <div class="part_1">
+            <div class="sq_mtr">
+               <label for="sq_mtr">Enter area of house in sq.meters:</label>
+               <input type="text" name="sq_mtr">
+            </div>
+      
+            <div class="no_of_rooms">
+               <label for="no_of_rooms">Enter number rooms:</label>
+               <input type="range" name="no_of_rooms">
+               <span>1</span>
+            </div>
+            <div class="has_yard">
+               <label for="has_yard">Does it have a yard:</label>
+               <input type="checkbox" name="has_yard">
+               <span>Yes, it has a yard</span>
+            </div>
+            <div class="has_pool">
+               <label for="has_pool">Does it have a pool:</label>
+               <input type="checkbox" name="has_pool">
+               <span>Yes, it has pool</span>
+            </div>
+            <div class="floors">
+               <label for="floors">Enter number of floors:</label>
+               <input type="range" name="floors">
+               <span>1</span>
+            </div>
+            <div class="city_code"></div>
+            <div class="city_part_range"></div>
+      
+            <div class="no_of_prev_owners">
+               <label for="no_of_prev_owners">Enter number of previous owners:</label>
+               <input type="text" name="no_of_prev_owners">
+            </div>
+            <div class="made">
+               <label for="made">Enter year it was made:</label>
+               <input type="text" name="made">
+            </div>
+            <div class="predict">
+               <button type="submit" name="predict" >Predict Price</button>
+            </div>
+         </div>
+         <div class="part_2">
+            <div class="is_new_built">
+               <label for="is_new_built">Is it a newly built:</label>
+               <input type="checkbox" name="is_new_built">
+            </div>
+            <div class="has_storm_protector">
+               <label for="has_storm_protector">Does it have a storm protector:</label>
+               <input type="checkbox" name="has_storm_protector">
+            </div>
+            <div class="basement">
+               <label for="basement">Enter basement area in sq.meters:</label>
+               <input type="text" name="basement">
+            </div>
+            <div class="attic">
+               <label for="attic">Enter attic area in sq.meters:</label>
+               <input type="text" name="attic">
+            </div>
+            <div class="garage">
+               <label for="garage">Enter garage area in sq.meters:</label>
+               <input type="text" name="garage">
+            </div>
+            <div class="has_storage_room">
+               <label for="has_storage_room">Does it have a storage room:</label>
+               <input type="checkbox" name="has_storage_room">
+            </div>
+            <div class="has_guest_room">
+               <label for="has_guest_room">Does it have a guest room:</label>
+               <input type="checkbox" name="has_guest_room">
+            </div>
+            <div class="price">
+               <p>Predicted Price: --</p>
+            </div>
+         </div>
+      </div>
+   </form>
+
+</body>
+
+</html>
+<!--
+    sq meter
+    no of rooms
+    has yard
+    has pools
+    floors
+    city code
+    city part range
+    num of prev owners
+    made
+    is new built
+    has storm protector
+    basement
+    attic
+    garage
+    has storage room
+    has guest room
+    price
+-->
